@@ -1,38 +1,330 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #0B0D1C;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* SYSTEM DESIGN */
+#h1{
+  font-weight: 800;
+  font-size: 100px;
+  line-height: 137px;
+  color: var(--offWhite);
+  letter-spacing: 2px;
+}
+#h2{
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 96px;
+  letter-spacing: 3px;
+}
+#h3{
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 68px;
+}
+#title{
+  font-weight: bold;
+  font-size: 30px;
+}
+#h4{
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: capitalize    
+}
+#text{
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 31px;
+  color: var(--lightGrey);
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* READ MORE */
+.readMore{
+  cursor: pointer;
+  background-color: var(--purple);
+  border: 2px solid var(--purple);
+  border-radius: 90px;
+  width: 15.5vh;
+  height: 5.5vh;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  margin-top:2rem;
+}
+.readMore a{
+  text-decoration: none;
+  color: var(--offWhite);
+}
+.readMore:hover{
+  transform: translateY(-2px);
+  background-color: var(--lightPurple);
+  border: 2px solid var(--lightPurple);
+
+}
+
+/* IFRAME */
+iframe:hover{
+  cursor: pointer;
+}
+
+/* NAV BAR */
+nav{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  top: 3vh;
+  margin-left: 10vh;
+  height: 10%;
+  width: 40%;
+  border-radius: 60px;
+  background-color: var(--darkGrey);
+  z-index:100;
+}
+#navImg{
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+  margin-left: 5%;
+}
+nav div{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-around;
+  margin: 5%;
+}
+nav div a{
+  text-decoration: none;
+  color: var(--offWhite);
+}
+.navLinks:hover{
+  color: var(--lightGrey);
+  transform: translateY(-2px);
+}
+nav div button{
+  background-color: var(--grey);
+  border-radius: 24px;
+  width: 25%;
+  border: none;
+  height: 5.8vh;
+}
+nav div button:hover{
+  background-color: var(--lightGrey);
+  border-radius: 24px;
+  width: 25%;
+  height: 6vh;
+  border:none;  
+}
+
+
+/* SOCIAL MEDIA */
+#socialMedia{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 2vh;
+  right: 4vh; 
+  width: 18vw;
+  z-index:100;
+}
+#socialMedia img{
+  width: 4rem;
+}
+#socialMedia img:hover{
+  transform: translateY(-2px);
+}
+
+
+/* TEXT LOOP */
+.loopWrapper{
+  width: 100vw;
+  z-index: 99;
+}
+.loopWrapper #h1{  
+  color: transparent;
+  white-space: nowrap;
+  -webkit-text-stroke: .1px var(--offWhite);
+  animation: infiniteText 5s linear infinite; 
+}
+@keyframes infiniteText {
+  0%{transform:translateX(0)}
+  100%{transform: translateX(-70%);}
+}
+
+
+/* SECTION */
+section{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
+/* LANDING */
+#landing{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#landingCont{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 100%;
+}
+#landingText{
+  width: 50%;
+}
+#landingText #name{
+  font-weight: bolder;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--purple);
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 6s steps(22, end) forwards,
+    blinks .8s infinite;
+}
+/* typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* typewriter cursor effect */
+@keyframes blinks {
+  from, to { border-color: transparent }
+  60% { border-color: rgb(215, 143, 18) }
+}
+#landingText #name b{ 
+  color: var(--purple);
+  font-weight: 900;
+}
+#landing iframe{
+  position: relative;
+  width: 35vw;
+  height: 55vh;
+}
+
+
+/* MOI */
+#moi{
+  display: flex;
+  justify-content: center;
+}
+#moiCont{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#moi #h3{
+  color: var(--lightGrey);
+  width: 50%;
+}
+#moi #h3 a{
+  color: var(--purple);
+  font-weight: bold;
+  margin: 5px;
+}
+#moi #h3 b{
+  color: var(--lightPurple);
+  margin: 5px;
+}
+
+
+/* EXPERIENCE */
+#experience{
+  margin-top: 10rem;
+}
+#expCont{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+.expBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  height: 80vh;
+  box-sizing: border-box;
+}
+.expText{
+  color: var(--offWhite);
+  width: 45%;
+}
+.expText div{
+  margin-top: 20px;
+}
+
+mark{
+  background-color: var(--grey);
+  color: var(--offWhite);
+}
+
+.expBox iframe{
+  position: relative;
+  width: 45%;
+  overflow: hidden;
+}
+.expBox img{
+  position: relative;
+  width: 30%;
+  height: auto;
+}
+
+
+/*Footer*/
+#footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  color: var(--offWhite);
+  background-color: var(--darkGrey);
+}
+#footerTitle{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5rem;
+  gap: .5rem;
 }
 
-.App-link {
-  color: #61dafb;
+#footerBottom #text{
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+
+:root{
+  --purple: #904BFF;
+  --lightPurple: #BC9AFF;
+  --lightGrey: #838790; 
+  --grey: #484848;
+  --darkGrey: #252525;
+  --offWhite: #f1f1f1;
 }
