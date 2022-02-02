@@ -4,6 +4,31 @@
   font-family: 'Manrope', sans-serif;
 }
 
+/* LOADER */
+#loadMe{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loaderImg{
+  width: 10rem;
+  animation: rockHands .2s infinite alternate;;
+}
+
+@keyframes rockHands {
+  from{
+    width: 10rem;
+  }
+  to{
+    width: 9.3rem;
+  }
+}
+
+
+
 body{
   background-color: #0B0D1C;
   overflow-x: hidden;
@@ -15,7 +40,7 @@ body{
   font-size: 100px;
   line-height: 137px;
   color: var(--offWhite);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 #h2{
   font-weight: bold;
@@ -78,6 +103,7 @@ iframe:hover{
   cursor: pointer;
 }
 
+
 /* NAV BAR */
 nav{
   position: fixed;
@@ -92,7 +118,7 @@ nav{
   width: 40%;
   border-radius: 60px;
   background-color: var(--darkGrey);
-  z-index:100;
+  z-index:10;
 }
 #navImg{
   display: flex;
@@ -152,7 +178,7 @@ nav div button:hover{
 /* TEXT LOOP */
 .loopWrapper{
   width: 100vw;
-  z-index: 99;
+  z-index: 1;
 }
 .loopWrapper #h1{  
   color: transparent;
@@ -199,10 +225,10 @@ section{
   border-right: .15em solid var(--purple);
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .12em; /* Adjust as needed */
   animation: 
-    typing 6s steps(22, end) forwards,
-    blinks .8s infinite;
+    typing 9.7s steps(14, end) forwards,
+    blinks 1.8s infinite;
 }
 /* typing effect */
 @keyframes typing {
@@ -248,6 +274,11 @@ section{
   color: var(--lightPurple);
   margin: 5px;
 }
+
+#moiCont img{
+  width: 35%;
+}
+
 
 
 /* EXPERIENCE */
@@ -301,12 +332,12 @@ mark{
   position: relative;
   bottom: 0;
   color: var(--offWhite);
-  background-color: var(--darkGrey);
+
 }
 #footerTitle{
   display: flex;
   flex-direction: column;
-  margin: 5rem;
+  margin: 3rem;
   gap: .5rem;
 }
 
