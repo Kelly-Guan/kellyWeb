@@ -27,6 +27,25 @@
   }
 }
 
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--darkGrey);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--lightGrey);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--grey);
+}
+
+
 
 
 body{
@@ -39,7 +58,7 @@ body{
   font-weight: 800;
   font-size: 100px;
   line-height: 137px;
-  color: var(--offWhite);
+
   letter-spacing: 1px;
 }
 #h2{
@@ -185,6 +204,7 @@ nav div button:hover{
   white-space: nowrap;
   -webkit-text-stroke: .1px var(--offWhite);
   animation: infiniteText 5s linear infinite; 
+  
 }
 @keyframes infiniteText {
   0%{transform:translateX(0)}
@@ -218,6 +238,7 @@ section{
 }
 #landingText{
   width: 50%;
+  color: var(--offWhite);
 }
 #landingText #name{
   font-weight: bolder;
@@ -326,6 +347,97 @@ mark{
 }
 
 
+/* EXP PAGE */
+.expPage{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1rem;
+}
+.expPage #h1{ 
+  font-weight: 600;
+}
+.expPage #text{
+  width: 70%;
+}
+.expPageDesc{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 5rem;
+  margin-top: 4rem;
+}
+.expPageDescCont{
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+}
+.expPageDescBox{
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  gap: .5rem;
+}
+.expPageDescBox #h4{
+  color: var(--offWhite);
+}
+
+
+.expPageContent{
+  display: flex;
+  justify-content: center;
+}
+.expPageContentCont{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  gap: 5rem;
+}
+.expPageContentBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 38rem;
+  box-sizing: border-box;
+}
+.expPageContentSec {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+  gap: 1rem;
+}
+.expPageContentSec #h2{
+  color: var(--offWhite);
+}
+
+.expPageContentSec ul{
+  margin-left: 2.5rem;
+}
+
+.expPageContentSec a{
+  color: var(--purple)
+}
+
+.expPageContentSec p{
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
 /*Footer*/
 #footer{
   width: 100%;
@@ -358,4 +470,41 @@ mark{
   --grey: #484848;
   --darkGrey: #252525;
   --offWhite: #f1f1f1;
+}
+
+
+.title-ccs{
+  color: #0E4F1C;
+}
+
+.title-marketangelo{
+  color: #01ACC0;
+}
+
+.title-swim{
+  color: #00ACDB;
+}
+
+.title-coach{
+  color: #ED1941;
+}
+
+.title-mathscience{
+  color: rgb(197, 27, 27);
+}
+
+.title-beadsforseeds{
+  color: #187a2e;
+}
+
+.title-council{
+  color: #68202B;
+}
+
+.title-retter{
+  color:rgb(182, 181, 181);
+}
+
+.title-sea{
+  color: #03257D;
 }
