@@ -78,7 +78,7 @@ body{
 }
 #h4{
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.2rem;
   text-transform: capitalize    
 }
 #text{
@@ -96,10 +96,9 @@ a{
 .readMore{
   cursor: pointer;
   background-color: var(--purple);
-  border: 2px solid var(--purple);
   border-radius: 90px;
-  width: 15.5vh;
-  height: 5.5vh;
+
+  padding: 10px 15px;
   text-transform: capitalize;
   font-weight: 600;
   font-size: 17px;
@@ -113,7 +112,6 @@ a{
 .readMore:hover{
   transform: translateY(-2px);
   background-color: var(--lightPurple);
-  border: 2px solid var(--lightPurple);
 
 }
 
@@ -163,16 +161,18 @@ nav div a{
 nav div button{
   background-color: var(--grey);
   border-radius: 24px;
-  width: 25%;
+  width: auto;
+  padding: 10px 15px ;
   border: none;
-  height: 5.8vh;
 }
 nav div button:hover{
   background-color: var(--lightGrey);
   border-radius: 24px;
-  width: 25%;
-  height: 6vh;
   border:none;  
+}
+
+#backNav{
+  width: 30%;
 }
 
 
@@ -348,6 +348,9 @@ mark{
 
 
 /* EXP PAGE */
+#expMain{
+  margin-top: 8rem;
+}
 .expPage{
   display: flex;
   align-items: center;
@@ -387,7 +390,23 @@ mark{
   color: var(--offWhite);
 }
 
+.expAd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 
+.expAd iframe{
+  width: 60rem;
+  height: 33.8rem;
+}
+
+
+b{
+  color:var(--lightPurple);
+}
 .expPageContent{
   display: flex;
   justify-content: center;
@@ -411,6 +430,10 @@ mark{
   height: 38rem;
   box-sizing: border-box;
 }
+.expPageContentBox #xmas2020{
+  height: 40rem;
+  width: auto;
+}
 .expPageContentSec {
   display: flex;
   flex-direction: column;
@@ -424,19 +447,15 @@ mark{
 .expPageContentSec ul{
   margin-left: 2.5rem;
 }
-
+.expPageContentSec ol{
+  margin-left: 2.5rem;
+}
 .expPageContentSec a{
   color: var(--purple)
 }
-
 .expPageContentSec p{
   margin-bottom: 1rem;
 }
-
-
-
-
-
 
 /*Footer*/
 #footer{
@@ -457,6 +476,228 @@ mark{
   text-align: center;
   margin-top: 1rem;
   font-size: 15px;
+}
+
+
+
+
+@media (max-width: 1200px){
+  nav{
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px #0000007f;
+    width: 80%;
+  }
+  #socialMedia{
+    justify-content: center;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+  }
+  #socialMedia img{
+    width: 4rem;
+    margin-inline: 1rem;
+  }
+  /* READ MORE */
+  .readMore a{
+    color: var(--purple);
+  }
+  .readMore{
+    color: var(--purple);
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding:0;
+    margin-top:1rem;
+  }
+
+  .readMore:hover{
+    color: var(--purple);
+    cursor: pointer;
+    background-color: transparent;
+    border:0;
+  }
+  /* LANDING */
+  #landingCont{
+    width: 100%;
+}
+  #landing iframe{
+    display: none;
+  }
+  #landingText{
+    width: 65%;
+  }
+
+  /* MOI */
+  #moiCont{
+    flex-direction: column;
+  }
+  #moi #h3{
+    margin-top: 4rem;
+    width: 75%;
+    text-align: center;
+  }
+  #moiCont img{
+    width: 60%;
+  }
+
+  /* EXPERIENCE */
+  #experience{
+    margin-top: 5rem;
+  }
+  #expCont{
+    flex-direction: column;
+  }
+  .expBox{
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 75%;
+    height: 35rem;
+    border-radius: 30px;
+    justify-content: space-around;
+    background-color: var(--darkGrey);
+    overflow: hidden;
+  }
+  .expText{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .expText #h2{
+    font-size: 60px;
+  }
+  .expText #h4{
+    display: none;
+  }
+  .expText #title{
+    display: none;
+  }
+  .expBox iframe{
+    display: none;
+  }
+  .expBox img{
+    display: none;
+  }
+
+  /*Footer*/
+  #footerTitle{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+  #footerBottom #text{
+    display: none;
+  }
+
+  /* EXP PAGE */
+  #backNav{
+    width: 80%;
+  }
+}
+
+@media (max-width: 975px){
+/* EXP PAGE */
+.expPageDesc{
+  display: none;
+}
+.expAd iframe{
+  width: 40rem;
+  height: 25rem;
+}
+.expPageContentBox{
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  height: auto;
+}
+.expPageContentBox #xmas2020{
+  height: 40rem;
+  width: auto;
+}
+.expPageContentSec {
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 2rem;
+
+}
+.expPageContentSec img{
+  width: 30rem;
+}
+.expPageContentSec ul{
+  text-align: left;
+}
+.expPageContentSec ol{
+  text-align: left;
+}
+}
+
+@media (max-width: 900px){
+  #h1{
+    font-size: 65px;
+    line-height: normal;
+  }
+  #h2{
+    font-size: 40px;
+    line-height: normal;
+  }
+
+  nav{
+    display: none;
+  }
+
+  #backNav{
+    display:block;
+  }
+  #backNav img{
+    display: none;
+  }
+  #backNav button{
+    display: none;
+  }
+  #backNav .navLinks{
+    display: block;
+    font-size: 30px;
+  }
+
+  #landingText{
+    text-align: center;
+    width: 90%;
+  }
+
+  #landingText #name{
+    letter-spacing: 0; 
+    animation: none;
+    overflow:visible; 
+    border-right: none;
+    white-space:normal; 
+  }
+
+  #moiCont img{
+    width: 90%;
+  }
+
+  #moiCont #h3{
+    font-size: 35px;
+    line-height: normal;
+    margin-top: 1rem;
+  }
+  #footer{
+    text-align: center;
+  }
+
+  .expPage{
+    margin-bottom: 2rem;
+  }
+
+  .expPageContentSec img{
+    width: 90%;
+  }
+
+
 }
 
 
@@ -485,12 +726,9 @@ mark{
   color: #00ACDB;
 }
 
-.title-coach{
-  color: #ED1941;
-}
 
-.title-mathscience{
-  color: rgb(197, 27, 27);
+.title-shad{
+  color: #00A7E1;
 }
 
 .title-beadsforseeds{
@@ -498,7 +736,7 @@ mark{
 }
 
 .title-council{
-  color: #68202B;
+  color: #5B1E30;
 }
 
 .title-retter{
