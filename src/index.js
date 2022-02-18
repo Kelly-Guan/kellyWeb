@@ -6,11 +6,9 @@ import CCS from './pages/ccs';
 import MarketAngelo from './pages/marketAngelo';
 import Swim from './pages/swim';
 import Council from './pages/council';
-import Shad from './pages/shad';
 
 import reportWebVitals from './reportWebVitals';
 
-import { render } from "react-dom";
 import {
   BrowserRouter,
   Routes,
@@ -25,7 +23,6 @@ ReactDOM.render(
       <Route path="marketAngelo" element={<MarketAngelo />} />
       <Route path="swim" element={<Swim />} />
       <Route path="council" element={<Council />} />
-      <Route path="shad" element={<Shad />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

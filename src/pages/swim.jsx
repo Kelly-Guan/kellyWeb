@@ -14,7 +14,7 @@ import Heart from '../imgs/thanku.png';
 
 
 import React, {useState, useEffect} from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../App.css';
 
@@ -34,23 +34,23 @@ export default function Swim() {
     {
         loading ?
         <div id="loadMe">
-          <img id="loaderImg" size={1250} src={logo} loading={loading}/>
+          <img id="loaderImg" size={1250} src={logo} loading={loading} alt="rockhands" />
         </div>
         :     
     <body>
         <nav id= "backNav">
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src={logo} alt=""/></a>
+          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
           <div id="h4" >
-                <a class="navLinks"><Link to="/">back to the past</Link></a>
-              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank">resume</a></button>
+                <a class="navLinks" href="#"><Link to="/">back to the past</Link></a>
+              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
           </div>
         </nav>
 
         <div id="socialMedia">
-            <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank"><img src={linkedin} alt=""/></a>
-            <a href="mailto: kelly.g.guan@gmail.com" target="_blank"><img src={email} alt=""/></a>
-            <a href="https://github.com/Kelly-Guan" target="_blank"><img src={github} alt=""/></a>
-            <a href="https://devpost.com/KellyGuan" target="_blank"><img src={devpost} alt=""/></a>
+          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
+          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
+          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
         </div>
 
         {/* CONTENT */}
@@ -58,7 +58,7 @@ export default function Swim() {
 
          {/* Title*/}
         <section class="expPage">
-            <div id="h1"> <a href="https://www.instagram.com/market_angelo/" target="_blank" class="title-swim">Competitive Swimming</a></div> 
+            <div id="h1"> <a href="#"  class="title-swim">Competitive Swimming</a></div> 
             <div id="text">I currently swim for Crest Swimming in Toronto and I'm a mid-distance swimmer:)</div>
         </section>
          
@@ -74,7 +74,7 @@ export default function Swim() {
                 </div>
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">Location</div>
-                    <div id="text" class="info-section-Info"><a href="https://www.instagram.com/crestswimclub/" target="_blank"><b>Crest Swimming</b></a></div>
+                    <div id="text" class="info-section-Info"><a href="https://www.instagram.com/crestswimclub/" target="_blank" rel="noreferrer"><b>Crest Swimming</b></a></div>
                 </div>
             </div>
         </section>
@@ -93,7 +93,7 @@ export default function Swim() {
                             <p>
                             I am a mid distance, multi-event swimmer. But my favorite events are probably 200Bk and 200IM. 
                             </p>
-                            Swimming Canada <a href="https://www.swimming.ca/en/swimmer/5059654/">Profile</a>:
+                            Swimming Canada <a href="https://www.swimming.ca/en/swimmer/5059654/" target="_blank" rel="noreferrer">Profile</a>:
                             <ul>
                                 <li><b>200BK</b> SC: 2:23.49</li>
                                 <li><b>200IM</b> SC: 2:24.18</li>

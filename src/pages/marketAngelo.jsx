@@ -15,7 +15,7 @@ import Problem from '../imgs/marketangelo/Sally With Pencil.png';
 import ThankU from '../imgs/thanku.png';
 
 import React, {useState, useEffect} from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../App.css';
 
@@ -35,29 +35,29 @@ export default function MarketAngelo() {
     {
         loading ?
         <div id="loadMe">
-          <img id="loaderImg" size={1250} src={logo} loading={loading}/>
+          <img id="loaderImg" size={1250} src={logo} loading={loading} alt="load"/>
         </div>
         :     
     <body>
         <nav id= "backNav">
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src={logo} alt=""/></a>
+          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
           <div id="h4" >
                 <a class="navLinks"><Link to="/">back to the past</Link></a>
-              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank">resume</a></button>
+              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
           </div>
         </nav>
 
         <div id="socialMedia">
-            <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank"><img src={linkedin} alt=""/></a>
-            <a href="mailto: kelly.g.guan@gmail.com" target="_blank"><img src={email} alt=""/></a>
-            <a href="https://github.com/Kelly-Guan" target="_blank"><img src={github} alt=""/></a>
-            <a href="https://devpost.com/KellyGuan" target="_blank"><img src={devpost} alt=""/></a>
+          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
+          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
+          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
         </div>
 
         <div id="expMain">
          {/* Title*/}
         <section class="expPage">
-            <div id="h1"> <a href="https://www.instagram.com/market_angelo/" target="_blank" class="title-marketangelo">MarketAngelo</a></div> 
+            <div id="h1"> <a href="https://www.instagram.com/market_angelo/" target="_blank" rel="noreferrer" class="title-marketangelo">MarketAngelo</a></div> 
             <div id="text">Startup dedicated to teaching youth sustainable investing through an interactive gamified learning platform</div>
         </section>
          
@@ -78,7 +78,7 @@ export default function MarketAngelo() {
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">Learn More:</div>
                     <div id="text" class="info-section-Info">
-                        <a href="https://www.instagram.com/market_angelo/" target="_blank" ><img src={insta} alt=""/></a>
+                        <a href="https://www.instagram.com/market_angelo/" target="_blank" rel="noreferrer" ><img src={insta} alt=""/></a>
                     </div>
                 </div>
             </div>

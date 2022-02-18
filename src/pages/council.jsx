@@ -16,12 +16,10 @@ import Waffle from '../imgs/council/waffle wednesday.png';
 import Swap from '../imgs/council/clothing swap.png';
 import XMas2019 from '../imgs/council/xmas2019.png';
 
-import Heart from '../imgs/thanku.png';
-
 
 
 import React, {useState, useEffect} from 'react';
-import { Outlet, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 import '../App.css';
 
@@ -41,23 +39,23 @@ export default function Council() {
     {
         loading ?
         <div id="loadMe">
-          <img id="loaderImg" size={1250} src={logo} loading={loading}/>
+          <img id="loaderImg" size={1250} src={logo} loading={loading} alt="load"/>
         </div>
         :     
     <body>
         <nav id= "backNav">
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src={logo} alt=""/></a>
+          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
           <div id="h4" >
                 <a class="navLinks"><Link to="/">back to the past</Link></a>
-              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank">resume</a></button>
+              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
           </div>
         </nav>
 
         <div id="socialMedia">
-            <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank"><img src={linkedin} alt=""/></a>
-            <a href="mailto: kelly.g.guan@gmail.com" target="_blank"><img src={email} alt=""/></a>
-            <a href="https://github.com/Kelly-Guan" target="_blank"><img src={github} alt=""/></a>
-            <a href="https://devpost.com/KellyGuan" target="_blank"><img src={devpost} alt=""/></a>
+          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
+          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
+          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
         </div>
 
         {/* CONTENT */}
@@ -65,7 +63,7 @@ export default function Council() {
 
          {/* Title*/}
         <section class="expPage">
-            <div id="h1"> <a href="https://www.instagram.com/market_angelo/" target="_blank" class="title-council">Notre Dame High School</a></div> 
+            <div id="h1"> <a href="#" class="title-council">Notre Dame High School</a></div> 
         </section>
          
         <section class="expPageDesc">
@@ -80,7 +78,7 @@ export default function Council() {
                 </div>
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">Running Grade Account</div>
-                    <div id="text" class="info-section-Info"><a href="https://www.instagram.com/ndgrads_2022/" target="_blank">@ndgrads_2022</a></div>
+                    <div id="text" class="info-section-Info"><a href="https://www.instagram.com/ndgrads_2022/" target="_blank" rel="noreferrer">@ndgrads_2022</a></div>
                 </div>
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">School</div>
@@ -238,18 +236,6 @@ export default function Council() {
                     </div>
                 </div> 
 
-                
-                {/* THANKS  */}
-                <div class="expPageContentBox">
-                    <div class="expPageContentSec">
-                        <div id="h2">Thank You!</div>
-                        <div id="text">Comodo Coding Society would not be possible without my amazing Co-Founder <a href="https://www.linkedin.com/in/maria-t-petersen/" target="_blank">Maria Petersen</a>, our incredible Marketing Director Jade Holmes, our Advisor Mr. Tse and our moderator Jeanne Petersen. 
-                        </div>
-                    </div>
-                    <div class="expPageContentSec">
-                        <img src={Heart} alt=""/>
-                    </div>
-                </div>
             </div>
         </section>  
         </div>

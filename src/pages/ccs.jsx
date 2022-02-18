@@ -17,7 +17,7 @@ import Heart from '../imgs/thanku.png';
 
 
 import React, {useState, useEffect} from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import '../App.css';
 
@@ -37,30 +37,30 @@ export default function CCS() {
     {
         loading ?
         <div id="loadMe">
-          <img id="loaderImg" size={1250} src={logo} loading={loading}/>
+          <img id="loaderImg" size={1250} src={logo} loading={loading} alt="load"/>
         </div>
         :     
     <body>
         <nav id= "backNav">
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src={logo} alt=""/></a>
+          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
           <div id="h4" >
-                <a class="navLinks"><Link to="/">back to the past</Link></a>
-              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank">resume</a></button>
+                <a class="navLinks" href="#"><Link to="/">back to the past</Link></a>
+              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
           </div>
         </nav>
 
         <div id="socialMedia">
-            <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank"><img src={linkedin} alt=""/></a>
-            <a href="mailto: kelly.g.guan@gmail.com" target="_blank"><img src={email} alt=""/></a>
-            <a href="https://github.com/Kelly-Guan" target="_blank"><img src={github} alt=""/></a>
-            <a href="https://devpost.com/KellyGuan" target="_blank"><img src={devpost} alt=""/></a>
+          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
+          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
+          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
         </div>
 
         {/* CONTENT */}
         <div id="expMain">
          {/* Title*/}
         <section class="expPage">
-            <div id="h1"> <a href="https://www.instagram.com/comodocoding.society/" target="_blank" class="title-ccs">Comodo Coding Society</a></div> 
+            <div id="h1"> <a href="https://www.instagram.com/comodocoding.society/" target="_blank" rel="noreferrer" class="title-ccs">Comodo Coding Society</a></div> 
             <div id="text">Mission to empower young female students with the skills and confidence needed to excel in STEM</div>
         </section>
          
@@ -81,7 +81,7 @@ export default function CCS() {
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">Learn More:</div>
                     <div id="text" class="info-section-Info">
-                        <a href="https://www.instagram.com/comodocoding.society/" target="_blank" ><img src={insta} alt=""/></a>
+                        <a href="https://www.instagram.com/comodocoding.society/" target="_blank" rel="noreferrer"><img src={insta} alt=""/></a>
                     </div>
                 </div>
             </div>
@@ -180,9 +180,9 @@ export default function CCS() {
                             </p>
                             Check out a few here:
                             <ul>
-                                <li><a href="https://docs.google.com/document/d/1M1wiQxX3sBhgryN_P4VABRFOJooCdgV9yERp1dvzRfo/edit?usp=sharing" target="_blank" >Scratch L1 Student Notes </a></li>
-                                <li><a href="https://docs.google.com/document/d/1-jEstfPB8uMLveUREs7HYfy6jPqe4dROesbhjATllhk/edit?usp=sharing" target="_blank">Python L1 Student Notes</a></li>
-                                <li><a href="https://docs.google.com/document/d/1a9ly7KOH6vcYBmnnLa13pUAlyHFQm_MnH39n4BUqdhA/edit?usp=sharing" target="_blank">Python L4 Student Notes </a></li>
+                                <li><a href="https://docs.google.com/document/d/1M1wiQxX3sBhgryN_P4VABRFOJooCdgV9yERp1dvzRfo/edit?usp=sharing" target="_blank" rel="noreferrer" >Scratch L1 Student Notes </a></li>
+                                <li><a href="https://docs.google.com/document/d/1-jEstfPB8uMLveUREs7HYfy6jPqe4dROesbhjATllhk/edit?usp=sharing" target="_blank" rel="noreferrer" >Python L1 Student Notes</a></li>
+                                <li><a href="https://docs.google.com/document/d/1a9ly7KOH6vcYBmnnLa13pUAlyHFQm_MnH39n4BUqdhA/edit?usp=sharing" target="_blank"rel="noreferrer">Python L4 Student Notes </a></li>
                             </ul>
                         </div>
                     </div>
@@ -204,9 +204,9 @@ export default function CCS() {
                             </p>
                             Check out a few here:
                             <ul>
-                                <li><a href="https://docs.google.com/presentation/d/14ZmyAbVVzZm9FgDlxm5P_37nz8cY6YiJi54LqrH7QAw/edit?usp=sharing" target="_blank">Scratch L2 Slide Deck </a></li>
-                                <li><a href="https://docs.google.com/presentation/d/17du0C6zTvi0AQcvJveUulRyXcaW4O9r4l7RkMLqcoQQ/edit?usp=sharing" target="_blank">Python L1 Slide Deck</a></li>
-                                <li><a href="https://docs.google.com/presentation/d/1EwzrUYFCHJoCaywg9jybIEtvR0iwtIQQO-Q1uAYgy14/edit?usp=sharing" target="_blank">Python L4 Slide Deck</a></li>
+                                <li><a href="https://docs.google.com/presentation/d/14ZmyAbVVzZm9FgDlxm5P_37nz8cY6YiJi54LqrH7QAw/edit?usp=sharing" target="_blank" rel="noreferrer">Scratch L2 Slide Deck </a></li>
+                                <li><a href="https://docs.google.com/presentation/d/17du0C6zTvi0AQcvJveUulRyXcaW4O9r4l7RkMLqcoQQ/edit?usp=sharing" target="_blank" rel="noreferrer">Python L1 Slide Deck</a></li>
+                                <li><a href="https://docs.google.com/presentation/d/1EwzrUYFCHJoCaywg9jybIEtvR0iwtIQQO-Q1uAYgy14/edit?usp=sharing" target="_blank" rel="noreferrer">Python L4 Slide Deck</a></li>
                             </ul>
                         </div>
                     </div>
@@ -222,9 +222,9 @@ export default function CCS() {
                             </p>
                             Check out a few of our member’s <b>Scratch Projects</b> here: 
                             <ul>
-                                <li>Francesca Galang:<a href="https://scratch.mit.edu/projects/525544504" target="_blank"> Phil’s Fire </a></li>
-                                <li>Emily Wellwood:<a href="https://scratch.mit.edu/projects/519189196 " target="_blank">Dinosaur Game </a></li>
-                                <li>Leah Karasavidis:<a href="https://scratch.mit.edu/projects/520935223" target="_blank">Trivia Extravaganza </a></li>
+                                <li>Francesca Galang:<a href="https://scratch.mit.edu/projects/525544504" target="_blank" rel="noreferrer"> Phil’s Fire </a></li>
+                                <li>Emily Wellwood:<a href="https://scratch.mit.edu/projects/519189196 " target="_blank" rel="noreferrer">Dinosaur Game </a></li>
+                                <li>Leah Karasavidis:<a href="https://scratch.mit.edu/projects/520935223" target="_blank" rel="noreferrer">Trivia Extravaganza </a></li>
                             </ul>
                         </div>
                     </div>
@@ -245,9 +245,9 @@ export default function CCS() {
                             </p>
                             Check out a few here:
                             <ul>
-                                <li><a href="https://docs.google.com/document/d/11SgaXM1NwiJNfCF_BK-ozqluj048eMhOnmyRh8kaKqQ/edit?usp=sharing" target="_blank">Mimi Aung </a></li>
-                                <li><a href="https://docs.google.com/document/d/1Eh-v8CwkxbXSRZ3GLvNpnwF4Q0SY_wmFOVBZhzdmSE4/edit?usp=sharing" target="_blank">Erin Teague</a></li>
-                                <li><a href="https://docs.google.com/document/d/1G2DnDcxoJGoOjWF05l2av0CVlvYzlcohdW6zCcxMLm8/edit?usp=sharing" target="_blank"> Carol Shaw</a></li>
+                                <li><a href="https://docs.google.com/document/d/11SgaXM1NwiJNfCF_BK-ozqluj048eMhOnmyRh8kaKqQ/edit?usp=sharing" target="_blank" rel="noreferrer">Mimi Aung </a></li>
+                                <li><a href="https://docs.google.com/document/d/1Eh-v8CwkxbXSRZ3GLvNpnwF4Q0SY_wmFOVBZhzdmSE4/edit?usp=sharing" target="_blank" rel="noreferrer">Erin Teague</a></li>
+                                <li><a href="https://docs.google.com/document/d/1G2DnDcxoJGoOjWF05l2av0CVlvYzlcohdW6zCcxMLm8/edit?usp=sharing" target="_blank" rel="noreferrer"> Carol Shaw</a></li>
                             </ul>
                         </div>
                     </div>
@@ -262,8 +262,8 @@ export default function CCS() {
 
                             Our Guest Speakers: 
                             <ul>
-                                <li>Diana Skrzydlo - Continuing Lecturer at Waterloo: <a href="https://www.youtube.com/watch?v=E0qfWbq8o50&t=1s" target="_blank">Explaining Stats in Machine Learning</a></li>
-                                <li>Samantha Lam - UI/UX Designer: <a href="https://youtu.be/faxlIu-grQU?t=26" target="_blank" >Figma 101</a></li>
+                                <li>Diana Skrzydlo - Continuing Lecturer at Waterloo: <a href="https://www.youtube.com/watch?v=E0qfWbq8o50&t=1s" target="_blank" rel="noreferrer">Explaining Stats in Machine Learning</a></li>
+                                <li>Samantha Lam - UI/UX Designer: <a href="https://youtu.be/faxlIu-grQU?t=26" target="_blank" rel="noreferrer">Figma 101</a></li>
 
                             </ul>
                         </div>
@@ -279,7 +279,7 @@ export default function CCS() {
                     </div>
                     <div class="expPageContentSec">
                         <div id="h2">Thank You!</div>
-                        <div id="text">Comodo Coding Society would not be possible without my amazing Co-Founder <a href="https://www.linkedin.com/in/maria-t-petersen/" target="_blank">Maria Petersen</a>, our incredible Marketing Director Jade Holmes, our Advisor Mr. Tse and our moderator Jeanne Petersen. 
+                        <div id="text">Comodo Coding Society would not be possible without my amazing Co-Founder <a href="https://www.linkedin.com/in/maria-t-petersen/" target="_blank" rel="noreferrer">Maria Petersen</a>, our incredible Marketing Director Jade Holmes, our Advisor Mr. Tse and our moderator Jeanne Petersen. 
                         </div>
                     </div>
                 </div>

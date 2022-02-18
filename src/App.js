@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from './imgs/logo.svg';
 import linkedin from './imgs/socialMedia/linkedin.png';
@@ -35,26 +35,26 @@ const [loading, setLoading] = useState(false);
       {
         loading ?
         <div id="loadMe">
-          <img id="loaderImg" size={1250} src={logo} loading={loading}/>
+          <img id="loaderImg" size={1250} src={logo} loading={loading} alt="3DMe"/>
         </div>
         : 
         <body>
     
         <nav>
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src={logo} alt=""/></a>
+          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
           <div id="h4" >
               <a class="navLinks" href="#moi">moi</a>
               <a class="navLinks" href="#experience">experience</a>
               <a class="navLinks" href="#projects">projects</a>
-              <button id="h4"><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank">resume</a></button>
+              <button id="h4"><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
           </div>
         </nav>
 
         <div id="socialMedia">
-          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank"><img src={linkedin} alt=""/></a>
-          <a href="mailto: kelly.g.guan@gmail.com" target="_blank"><img src={email} alt=""/></a>
-          <a href="https://github.com/Kelly-Guan" target="_blank"><img src={github} alt=""/></a>
-          <a href="https://devpost.com/KellyGuan" target="_blank"><img src={devpost} alt=""/></a>
+          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
+          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
+          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
+          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
         </div>
 
         <section id="landing">
@@ -70,7 +70,7 @@ const [loading, setLoading] = useState(false);
           <div id="moiCont">
             <img src={moi} alt=""/>
             <div id="h3">
-              hello! my name is <a>Kelly Guan</a>, but my friends call me kellogs frosted flakes. 
+              hello! my name is <a href="https://www.youtube.com/watch?v=WJzAzu448hc" target="_blank" rel="noreferrer">Kelly Guan</a>, but my friends call me kellogs frosted flakes. 
               here is a glimpse into my life hectic as a grade 12
               <b> student</b>,
               <b> swimmer</b>, 
@@ -92,9 +92,9 @@ const [loading, setLoading] = useState(false);
                   <div id="h2">Cactus Kids Health Club 🌵</div>
                   <div id="title">Cheif Technology Officer & Founder</div>
                   <div id="text">Founded the first NFT project focused on longevity as a lifestyle, introducing people to the space and working on extending their healthspan.</div>
-                  <button class="readMore"><a href="https://www.instagram.com/cactuskidshc/" target="_blank">read more →</a></button>
+                  <button class="readMore"><a href="https://www.instagram.com/cactuskidshc/" target="_blank" rel="noreferrer">read more →</a></button>
                 </div>
-                <img src={cacty} />
+                <img src={cacty} alt="Cact"/>
               </div>
 
               <div class="expBox">
@@ -124,7 +124,7 @@ const [loading, setLoading] = useState(false);
                   <div id="h4"><mark>July 5, 2021 - July 30, 2021</mark></div>
                   <div id="h2">Shad 2021 🌊</div>
                   <div id="text">Participated in Shad 2021 on the virtual University of Waterloo campus. Shad is an action-packed STEAM and entrepreneurship-based summer program. </div>
-                  <button class="readMore"><a href="https://www.shad.ca/" target="_blank">read more →</a></button>
+                  <button class="readMore"><a href="https://www.shad.ca/" target="_blank" rel="noreferrer">read more →</a></button>
                 </div>
               </div>
 
@@ -139,7 +139,7 @@ const [loading, setLoading] = useState(false);
               </div>
 
               <div class="expBox">
-              <img src={council} />
+              <img src={council} alt="council" />
                 <div class="expText">    
                   <div id="h4"><mark>May 25, 2019 - Present</mark></div>
                   <div id="h2">Student Council 👩🏻‍🎓</div>
