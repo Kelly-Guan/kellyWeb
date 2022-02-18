@@ -8,7 +8,7 @@ import devpost from './imgs/socialMedia/devpost.png';
 
 import moi from './imgs/moi.png';
 import cacty from './imgs/cacty.svg';
-import council from './imgs/council.svg';
+import council from './imgs/council.png';
 
 /* IMPORTS */
 import React, {useState, useEffect} from 'react';

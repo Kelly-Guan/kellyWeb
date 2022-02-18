@@ -8,7 +8,7 @@ import devpost from '../imgs/socialMedia/devpost.png';
 import GradSweaters from '../imgs/council/gradsweaters.png';
 import NDGrads from '../imgs/council/social media.jpg';
 import Xmas2020 from '../imgs/council/xmas2020.JPG';
-import CurrentCouncil from '../imgs/council.svg';
+import CurrentCouncil from '../imgs/council.png';
 
 import Council2019 from '../imgs/council/council2019.png';
 import Assemblies from '../imgs/council/assemblies.png';
