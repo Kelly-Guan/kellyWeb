@@ -45,7 +45,6 @@ const [loading, setLoading] = useState(false);
           <div id="h4" >
               <a class="navLinks" href="#moi">moi</a>
               <a class="navLinks" href="#experience">experience</a>
-              <a class="navLinks" href="#projects">projects</a>
               <button id="h4"><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
           </div>
         </nav>

@@ -18,7 +18,7 @@ import {
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="" element={<App />} />
       <Route path="ccs" element={<CCS />} />
       <Route path="marketAngelo" element={<MarketAngelo />} />
       <Route path="swim" element={<Swim />} />
