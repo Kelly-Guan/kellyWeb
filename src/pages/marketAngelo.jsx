@@ -1,4 +1,4 @@
-import logo from '../imgs/logo.png';
+import logo from '../imgs/logo.svg';
 
 import insta from '../imgs/socialMedia/Instagram.png';
 import linkedin from '../imgs/socialMedia/linkedin.png';
