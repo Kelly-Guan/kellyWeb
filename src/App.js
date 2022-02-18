@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import logo from './imgs/logo.svg';
+import logo from './imgs/logo.png';
 import linkedin from './imgs/socialMedia/linkedin.png';
 import email from './imgs/socialMedia/gmail.png';
 import github from './imgs/socialMedia/github.png';
