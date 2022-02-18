@@ -70,7 +70,7 @@ const [loading, setLoading] = useState(false);
             <img src={moi} alt=""/>
             <div id="h3">
               hello! my name is <a href="https://www.youtube.com/watch?v=WJzAzu448hc" target="_blank" rel="noreferrer">Kelly Guan</a>, but my friends call me kellogs frosted flakes. 
-              here is a glimpse into my life hectic as a grade 12
+              here is a glimpse into my hectic life as a grade 12
               <b> student</b>,
               <b> swimmer</b>, 
               <b> women in stem</b>, 

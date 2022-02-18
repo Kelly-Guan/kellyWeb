@@ -707,12 +707,10 @@ b{
 
 }
 
-@media (max-width: 600px){
+@media (max-width: 650px){
   .expText #h2{
-    font-size: 40px;
+    font-size: 35px;
   }
-
-
 }
 
 
