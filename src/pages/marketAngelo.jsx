@@ -1,6 +1,6 @@
 import logo from '../imgs/logo.svg';
 
-
+import insta from '../imgs/socialMedia/Instagram.png';
 import linkedin from '../imgs/socialMedia/linkedin.png';
 import email from '../imgs/socialMedia/gmail.png';
 import github from '../imgs/socialMedia/github.png';
@@ -10,8 +10,7 @@ import ProductLaunch from '../imgs/marketangelo/maProduct.png';
 import Product from '../imgs/marketangelo/maSolution.png';
 import Problem from '../imgs/marketangelo/Sally With Pencil.png';
 
-import cacty from '../imgs/cacty.svg';
-import council from '../imgs/council.svg';
+
 
 import ThankU from '../imgs/thanku.png';
 
@@ -79,15 +78,16 @@ export default function MarketAngelo() {
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">Learn More:</div>
                     <div id="text" class="info-section-Info">
-                        <a href="https://www.instagram.com/comodocoding.society/"><img src="social media icons/insta-logo.png" alt=""/></a>
+                        <a href="https://www.instagram.com/market_angelo/" target="_blank" ><img src={insta} alt=""/></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="expAd">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/qUthldkrTtY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qUthldkrTtY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
+
 
         {/* CONTENT */}
         <section class="expPageContent">
@@ -166,6 +166,9 @@ export default function MarketAngelo() {
                         <img src={ProductLaunch} alt=""/> 
                     </div>
                 </div>
+                <section class="expAd">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zyJ0A1P-9QU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
 
                 {/* THANKS  */}
                 <div class="expPageContentBox">
@@ -178,6 +181,7 @@ export default function MarketAngelo() {
                         </div>
                     </div>
                 </div>
+    
             </div>
         </section>  
         </div>
@@ -187,7 +191,7 @@ export default function MarketAngelo() {
             <div id="text">Feel free to reach out to me, I love meeting new people!😊</div>
             </div>                 
             <div id="footerBottom">
-            <div id="text">© May 2021 Kelly Guan</div>
+            <div id="text">© Feb 2022 Kelly Guan</div>
             </div>
         </section>
         </body> 

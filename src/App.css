@@ -34,7 +34,7 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--darkGrey);
+  background: #0B0D1C;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -118,6 +118,10 @@ a{
 /* IFRAME */
 iframe:hover{
   cursor: pointer;
+}
+
+button{
+  border: none;
 }
 
 
@@ -388,6 +392,9 @@ mark{
 }
 .expPageDescBox #h4{
   color: var(--offWhite);
+}
+.info-section-Info img{
+  width: 3rem;
 }
 
 .expAd{
@@ -699,6 +706,16 @@ b{
 
 
 }
+
+@media (max-width: 600px){
+  .expText #h2{
+    font-size: 40px;
+  }
+
+
+}
+
+
 
 
 

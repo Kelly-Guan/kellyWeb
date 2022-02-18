@@ -260,7 +260,7 @@ export default function Council() {
             <div id="text">Feel free to reach out to me, I love meeting new people!😊</div>
             </div>                 
             <div id="footerBottom">
-            <div id="text">© May 2021 Kelly Guan</div>
+            <div id="text">© Feb 2022 Kelly Guan</div>
             </div>
         </section>
         </body> 

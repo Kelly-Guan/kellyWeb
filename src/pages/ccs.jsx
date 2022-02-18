@@ -4,6 +4,7 @@ import linkedin from '../imgs/socialMedia/linkedin.png';
 import email from '../imgs/socialMedia/gmail.png';
 import github from '../imgs/socialMedia/github.png';
 import devpost from '../imgs/socialMedia/devpost.png';
+import insta from '../imgs/socialMedia/Instagram.png';
 
 import problem from '../imgs/ccs/problem.png';
 import ccsLogo from '../imgs/ccs/ccsLogo.png';
@@ -59,7 +60,7 @@ export default function CCS() {
         <div id="expMain">
          {/* Title*/}
         <section class="expPage">
-            <div id="h1"> <a href="https://www.instagram.com/market_angelo/" target="_blank" class="title-ccs">Comodo Coding Society</a></div> 
+            <div id="h1"> <a href="https://www.instagram.com/comodocoding.society/" target="_blank" class="title-ccs">Comodo Coding Society</a></div> 
             <div id="text">Mission to empower young female students with the skills and confidence needed to excel in STEM</div>
         </section>
          
@@ -80,7 +81,7 @@ export default function CCS() {
                 <div class="expPageDescBox">
                     <div id="h4" class="info-section-Title">Learn More:</div>
                     <div id="text" class="info-section-Info">
-                        <a href="https://www.instagram.com/comodocoding.society/"><img src="social media icons/insta-logo.png" alt=""/></a>
+                        <a href="https://www.instagram.com/comodocoding.society/" target="_blank" ><img src={insta} alt=""/></a>
                     </div>
                 </div>
             </div>
@@ -292,7 +293,7 @@ export default function CCS() {
             <div id="text">Feel free to reach out to me, I love meeting new people!😊</div>
             </div>                 
             <div id="footerBottom">
-            <div id="text">© May 2021 Kelly Guan</div>
+            <div id="text">© Feb 2022 Kelly Guan</div>
             </div>
         </section>
         </body> 
