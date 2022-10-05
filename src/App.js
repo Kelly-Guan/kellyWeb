@@ -122,7 +122,7 @@ const [loading, setLoading] = useState(false);
                   <div id="h4"><mark>May 25, 2019 - June 2022</mark></div>
                   <div id="h2">Student Council 👩🏻‍🎓</div>
                   <div id="title">President & prior Treasurer</div>
-                  <div id="text">Current President and prior Treasurer Initiated school-wide events, initiated school-wide executive Slack channel, oversaw school budget, chaired meetings, mentored younger members, and representative at Equity Inclusion meetings.</div>
+                  <div id="text"> Past President and prior Treasurer Initiated school-wide events, initiated school-wide executive Slack channel, oversaw school budget, chaired meetings, mentored younger members, and representative at Equity Inclusion meetings.</div>
                   <button class="readMore"><a><Link to="/council">read more →</Link></a></button>
                 </div>
               </div>
