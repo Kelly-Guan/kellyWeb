@@ -1,7 +1,7 @@
 # heyo! im Kelly Guan (she/her) 🤘
 i'm a Software Engineering student from the University of Waterloo. 
 
-Check me out[here](https://www.kellyguan.tech/).
+Check me out [here](https://www.kellyguan.tech/).
 
 ## how it was built 🛠
 built with react 
