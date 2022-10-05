@@ -1,21 +1,18 @@
 import logo from '../imgs/logo.svg';
 
 import insta from '../imgs/socialMedia/Instagram.png';
-import linkedin from '../imgs/socialMedia/linkedin.png';
-import email from '../imgs/socialMedia/gmail.png';
-import github from '../imgs/socialMedia/github.png';
-import devpost from '../imgs/socialMedia/devpost.png';
 
 import ProductLaunch from '../imgs/marketangelo/maProduct.png';
 import Product from '../imgs/marketangelo/maSolution.png';
 import Problem from '../imgs/marketangelo/Sally With Pencil.png';
 
-
-
 import ThankU from '../imgs/thanku.png';
 
 import React, {useState, useEffect} from 'react';
-import { Link } from "react-router-dom";
+import Nav from '../components/nav';
+import SocialMedia from '../components/socials';
+import Footer from '../components/footer';
+
 
 import '../App.css';
 
@@ -39,20 +36,8 @@ export default function MarketAngelo() {
         </div>
         :     
     <body>
-        <nav id= "backNav">
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
-          <div id="h4" >
-                <a class="navLinks"><Link to="/">back to the past</Link></a>
-              <button id="h4" ><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
-          </div>
-        </nav>
-
-        <div id="socialMedia">
-          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
-          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
-          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
-          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
-        </div>
+        <Nav />
+        <SocialMedia />
 
         <div id="expMain">
          {/* Title*/}
@@ -185,15 +170,8 @@ export default function MarketAngelo() {
             </div>
         </section>  
         </div>
-        <section id="footer">
-            <div id="footerTitle">
-            <div id="h3">Thanks for stopping by!</div>
-            <div id="text">Feel free to reach out to me, I love meeting new people!😊</div>
-            </div>                 
-            <div id="footerBottom">
-            <div id="text">© Feb 2022 Kelly Guan</div>
-            </div>
-        </section>
+        <Footer />
+        
         </body> 
         }
         </div>

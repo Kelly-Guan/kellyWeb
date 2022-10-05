@@ -1,10 +1,6 @@
 import { Link } from "react-router-dom";
 
 import logo from './imgs/logo.svg';
-import linkedin from './imgs/socialMedia/linkedin.png';
-import email from './imgs/socialMedia/gmail.png';
-import github from './imgs/socialMedia/github.png';
-import devpost from './imgs/socialMedia/devpost.png';
 
 import moi from './imgs/moi.png';
 import cacty from './imgs/cacty.svg';
@@ -15,19 +11,19 @@ import React, {useState, useEffect} from 'react';
 
 import './App.css';
 
-
-
-
+import Nav from './components/nav';
+import SocialMedia from './components/socials';
+import Footer from './components/footer';
 
 export default function App() {
 const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
+  /*useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 2000)
-  }, [])
+  }, [])*/
 
 
   return (  
@@ -39,26 +35,12 @@ const [loading, setLoading] = useState(false);
         </div>
         : 
         <body>
-    
-        <nav>
-          <a id="navImg" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer"><img src={logo} alt=""/></a>
-          <div id="h4" >
-              <a class="navLinks" href="#moi">moi</a>
-              <a class="navLinks" href="#experience">experience</a>
-              <button id="h4"><a href="https://drive.google.com/file/d/1ezTMjhwMJyGFKOjswkWZ7Zz8pjxofTwW/view" target="_blank" rel="noreferrer">resume</a></button>
-          </div>
-        </nav>
+        <Nav />
+        <SocialMedia />
 
-        <div id="socialMedia">
-          <a href="https://www.linkedin.com/in/kelly-guan/" target="_blank" rel="noreferrer"><img src={linkedin} alt=""/></a>
-          <a href="mailto: kelly.g.guan@gmail.com" target="_blank" rel="noreferrer"><img src={email} alt=""/></a>
-          <a href="https://github.com/Kelly-Guan" target="_blank" rel="noreferrer"><img src={github} alt=""/></a>
-          <a href="https://devpost.com/KellyGuan" target="_blank" rel="noreferrer"><img src={devpost} alt=""/></a>
-        </div>
 
         <section id="landing">
           <div id='landingCont'>
-            <iframe src='https://my.spline.design/me-8a33f328e15a51baab462decc8e69198/' frameborder='0' width='100%' height='100%'></iframe>
             <div id="landingText">
               <div id="h1">welcome! i'm <div id="name"><b>Kelly Guan</b>.</div></div>
             </div>
@@ -81,9 +63,6 @@ const [loading, setLoading] = useState(false);
         </section>
 
         <section id="experience"> 
-          <div class="loopWrapper">
-            <div id="h1">cheese.purple.crochet.baking.experience.cooking.bagels.hiking.eating.pizza.building.tv-enthusiast.experience.</div>
-          </div>
           <div id="expCont">
             <div class="expBox">
                 <div class="expText">
@@ -150,15 +129,8 @@ const [loading, setLoading] = useState(false);
           </div>
         </section>
 
-        <section id="footer">
-          <div id="footerTitle">
-            <div id="h3">Thanks for stopping by!</div>
-            <div id="text">Feel free to reach out to me, I love meeting new people!😊</div>
-          </div>                 
-          <div id="footerBottom">
-            <div id="text">© Feb 2022 Kelly Guan</div>
-          </div>
-        </section>
+        <Footer />
+
         </body>
     } 
     </div>
