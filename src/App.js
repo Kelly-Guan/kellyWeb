@@ -18,12 +18,12 @@ import Footer from './components/footer';
 export default function App() {
 const [loading, setLoading] = useState(false);
 
-  /*useEffect(() => {
+  useEffect(() => {
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 2000)
-  }, [])*/
+  }, [])
 
 
   return (  
