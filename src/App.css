@@ -269,31 +269,35 @@ section{
   width: 50%;
   color: var(--offWhite);
 }
-#landingText #name{
-  font-weight: bolder;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--purple);
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .08em; /* Adjust as needed */
-  animation: 
-    typing 10s steps(17, end) forwards,
-    blinks .7s infinite;
-}
-/* typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-/* typewriter cursor effect */
-@keyframes blinks {
-  from, to { border-color: transparent }
-  60% { border-color: rgb(215, 143, 18) }
-}
-#landingText #name b{ 
+
+#landingText .name b{
   color: var(--purple);
   font-weight: 900;
+  letter-spacing: 0.5rem;
+
 }
+#landingText .name{
+  margin: 0 auto;
+  white-space:nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 7em;}
+}
+
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
 #landing iframe{
   position: relative;
   width: 35vw;
@@ -700,7 +704,7 @@ b{
     width: 90%;
   }
 
-  #landingText #name{
+  #landingText .name{
     letter-spacing: 0; 
     animation: none;
     overflow:visible; 
