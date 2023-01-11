@@ -51,9 +51,9 @@ const [loading, setLoading] = useState(false);
           <div id="moiCont">
             <img src={moi} alt=""/>
             <div id="h3">
-              hello! my name is <a href="https://www.youtube.com/watch?v=WJzAzu448hc" target="_blank" rel="noreferrer">Kelly Guan</a>, but my friends call me kellogs frosted flakes. 
+              👋 hello! my name is <a href="https://www.youtube.com/watch?v=WJzAzu448hc" target="_blank" rel="noreferrer">Kelly Guan</a>, but my friends call me kellogs frosted flakes. 
               here is a glimpse into my hectic life as a first year Software Engineer @uWaterloo
-              <b> 1A student</b>,
+              <b> 1B student</b>,
               <b> varsity swimmer</b>, 
               <b> woman in stem</b>, 
               <b> adventurer</b> and 
