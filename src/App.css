@@ -273,8 +273,6 @@ section{
 #landingText .name b{
   color: var(--purple);
   font-weight: 900;
-  letter-spacing: 0.5rem;
-
 }
 #landingText .name{
   margin: 0 auto;
@@ -705,7 +703,6 @@ b{
   }
 
   #landingText .name{
-    letter-spacing: 0; 
     animation: none;
     overflow:visible; 
     border-right: none;
