@@ -9,7 +9,7 @@ export default function Nav() {
         <div id="h4" >
             <a class="navLinks" href="/#moi">moi</a>
             <a class="navLinks" href="/#experience">experience</a>
-            <button id="h4"><a href="https://drive.google.com/file/d/12SpyGY6JFpRUD62Eo7Fg2GzFSKEEq2oY/view?usp=sharing" target="_blank" rel="noreferrer">resume</a></button>
+            <button id="h4"><a href="https://drive.google.com/file/d/1zPhzkrlTeFu_3eqMx4wzCuJlwsofMwlF/view?usp=sharing" target="_blank" rel="noreferrer">resume</a></button>
         </div>
       </nav>
     )
