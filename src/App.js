@@ -51,13 +51,14 @@ const [loading, setLoading] = useState(false);
           <div id="moiCont">
             <img src={moi} alt=""/>
             <div id="h3">
-              👋 hello! my name is <a href="https://youtu.be/UmZB_vFWqsU" target="_blank" rel="noreferrer">Kelly Guan</a>, but my friends call me kellogs frosted flakes. 
-              here is a glimpse into my hectic life as a first year Software Engineer @uWaterloo
-              <b> 1B student</b>,
+              👋 hello! my name is <a href="https://youtu.be/UmZB_vFWqsU" target="_blank" rel="noreferrer">Kelly Guan</a>.
+              i'm first year Software Engineer @uWaterloo, 
+              focusing my degree on <b>software</b> and <b>human-centric design</b>. i'm passionate about the intersection of technology and entrepreneurship and I love bringing ideas to life through programming, design thinking, and collaborating with others.
+              {/* <b> 1B student</b>,
               <b> varsity swimmer</b>, 
               <b> woman in stem</b>, 
               <b> adventurer</b> and 
-              <b> entrepreneur</b>.
+              <b> entrepreneur</b>. */}
             </div>
           </div>
         </section>
