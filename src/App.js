@@ -53,7 +53,7 @@ const [loading, setLoading] = useState(false);
             <div id="h3">
               👋 hello! my name is <a href="https://youtu.be/UmZB_vFWqsU" target="_blank" rel="noreferrer">Kelly Guan</a>.
               i'm first year Software Engineer @uWaterloo, 
-              focusing my degree on <b>software</b> and <b>human-centric design</b>. i'm passionate about the intersection of technology and entrepreneurship and I love bringing ideas to life through programming, design thinking, and collaborating with others.
+              focusing my degree on <b>software</b> and <b>human-centric design</b>
               {/* <b> 1B student</b>,
               <b> varsity swimmer</b>, 
               <b> woman in stem</b>, 
