@@ -52,7 +52,7 @@ const [loading, setLoading] = useState(false);
             <img src={moi} alt=""/>
             <div id="h3">
               👋 hello! my name is <a href="https://youtu.be/UmZB_vFWqsU" target="_blank" rel="noreferrer">Kelly Guan</a>.
-              i'm a first year Software Engineer student @uWaterloo, focusing my degree on <b>software</b> and <b>human-centric design</b>. 
+              i'm a first year Software Engineering student @uWaterloo, focusing my degree on <b>software</b> and <b>human-centric design</b>. 
               {/* <b> 1B student</b>,
               <b> varsity swimmer</b>, 
               <b> woman in stem</b>, 
