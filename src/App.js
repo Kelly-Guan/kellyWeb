@@ -42,7 +42,7 @@ const [loading, setLoading] = useState(false);
         <section id="landing">
           <div id='landingCont'>
             <div id="landingText">
-              <div id="h1">welcome! i'm <p class="name anim-typewriter"><b>Kelly Guan</b>.</p></div>
+              <div id="h1">hey! i'm <p class="name anim-typewriter"><b>Kelly Guan</b>.</p></div>
             </div>
           </div>
         </section> 
